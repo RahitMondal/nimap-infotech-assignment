@@ -1,0 +1,15 @@
+nav {
+  background: linear-gradient(to bottom, #990000, #800000) !important;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #ff9933;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffb366;
+  text-decoration: none;
+}
