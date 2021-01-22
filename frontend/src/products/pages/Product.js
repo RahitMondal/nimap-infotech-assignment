@@ -96,6 +96,8 @@ const Categories = () => {
         onChangeHandler={onChangeHandler}
         onSelectHandler={onSelectHandler}
         submitHandler={submitHandler}
+        input={input}
+        categoryId={categoryId}
       />
       <ProductTable
         data={products}

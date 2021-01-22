@@ -54,7 +54,6 @@ const deleteProduct = async (req, res, next) => {
   let product;
   try {
     product = await Product.findById(req.body.product_id);
-    console.log(product);
   } catch (err) {
     const error = new HttpError(500, "Error occurred while fetching product");
     return next(error);

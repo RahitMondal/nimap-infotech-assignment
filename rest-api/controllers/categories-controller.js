@@ -82,7 +82,6 @@ const updateCategory = async (req, res, next) => {
   let products;
   try {
     products = await Product.find({ category_id: req.body._id });
-    console.log(products);
   } catch (err) {
     const error = new HttpError(500, "Error occurred while fetching product");
     return next(error);

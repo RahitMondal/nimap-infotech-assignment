@@ -5,6 +5,8 @@ const ProductCreationForm = ({
   onChangeHandler,
   onSelectHandler,
   submitHandler,
+  input,
+  categoryId,
 }) => {
   return (
     <div className="d-flex justify-content-center my-3 mx-2">
@@ -32,6 +34,7 @@ const ProductCreationForm = ({
       <button
         className="bg-primary text-white border-1 rounded-0 py-2 px-5 border-primary"
         onClick={submitHandler}
+        disabled={input && categoryId ? false : true}
       >
         ADD(+)
       </button>
