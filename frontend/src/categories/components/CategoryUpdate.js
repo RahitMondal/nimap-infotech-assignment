@@ -22,9 +22,8 @@ const CategoryUpdate = ({
       <button
         className="bg-primary text-white border-1 rounded-0 py-2 px-5 border-primary"
         onClick={updateHandler}
-        disabled={input === "" ? true : false}
       >
-        Update(+)
+        Update
       </button>
     </div>
   );
